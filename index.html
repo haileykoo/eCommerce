@@ -7,12 +7,29 @@
   <title>Document</title>
 </head>
 <body>
-  <label> Pants </label>
-  <input type="button" id="minusbtn" value="-">
-  <label id="pantsQty">0</label>
-  <input type="button" id="plusbtn" value="+">
-  $<label>40.99</label>
+  <h1>ECommerce Checkout</h1>
+  <h2>Product Quantity Unit Price Extended Price</h2>
 
+  <div class="pants-calculator">
+    <label> Pants </label>
+    <input type="button" id="pantsminusbtn" value="-">
+    <label id="pantsQty">0</label>
+    <input type="button" id="pantsplusbtn" value="+">
+    $<label id="pantsUnit">40.99</label>
+    $<label id="pantsExtended">0.00</label>
+  </div>
+
+  <div class="shirt-calculator">
+    <label> Shirt </label>
+    <input type="button" id="pantsminusbtn" value="-">
+    <label id="pantsQty">0</label>
+    <input type="button" id="pantsplusbtn" value="+">
+    $<label id="pantsUnit">40.99</label>
+    $<label id="pantsExtended">0.00</label>
+  </div>
+
+  <input type="button" value="calculate" id="calBtn">
+  
   <script src="js/index.js"></script>
 </body>
 </html>
