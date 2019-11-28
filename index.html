@@ -7,11 +7,67 @@
   <title>Document</title>
 </head>
 <body>
-  <label> Pants </label>
-  <input type="button" id="minusbtn" value="-">
-  <label id="pantsQty">0</label>
-  <input type="button" id="plusbtn" value="+">
-  $<label>40.99</label>
+  <table>
+    <tr>
+      <th>Product</th>
+      <th>Quantity</th>
+      <th>Unit Price</th>
+      <th>Extended Price</th>
+    </tr>
+
+    <tr>
+      <th>
+        <label> Pants </label>
+      </th>
+      <th>
+        <input type="button" id="pantsminusbtn" value="-">
+        <label id="pantsQty">0</label>
+        <input type="button" id="pantsplusbtn" value="+">
+      </th>
+      <th>
+        $<label id="unitP">40.99</label>
+      </th>
+      <th>
+        $<label id="extendedP">0.00</label>
+      </th>
+    </tr>
+
+    <tr>
+      <th>
+        <label> Shirt </label>
+      </th>
+      <th>
+        <input type="button" id="srtminusbtn" value="-">
+        <label id="shirtQty">0</label>
+        <input type="button" id="srtplusbtn" value="+">
+      </th>
+      <th>
+        $<label id="unitS">10.99</label>
+      </th>
+      <th>
+        $<label id="extendedS">0.00</label>
+      </th>
+    </tr>
+  </table>
+
+  <input type="button" id="calculate" value="Calculate">
+
+  <div>
+    <dl>
+      <dt>Subtotal:</dt>
+      <dd id="subtotal"></dd>
+      <dt>Tax:</dt>
+      <dd id="tax"></dd>
+      <dt>Total:</dt>
+      <dd id="total"></dd>
+    </dl>
+  </div>
+
+  <div>
+    <p>Have a Promo code?</p>
+    <input type="text" id="coupon">
+    <input type="button" id="promo" value="Click to Enter">
+  </div>
 
   <script src="js/index.js"></script>
 </body>
