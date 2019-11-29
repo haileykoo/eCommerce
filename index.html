@@ -4,10 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/index.css">
   <title>Document</title>
 </head>
 <body>
-  <table>
+  <h1>Checkout</h1>
+
+  <table class="table">
     <tr>
       <th>Product</th>
       <th>Quantity</th>
@@ -50,9 +53,9 @@
     </tr>
   </table>
 
-  <input type="button" id="calculate" value="Calculate">
+  <input type="button" id="calculate" value="Calculate" class="button">
 
-  <div>
+  <div class="total">
     <dl>
       <dt>Subtotal:</dt>
       <dd id="subtotal"></dd>
@@ -63,10 +66,10 @@
     </dl>
   </div>
 
-  <div>
+  <div class="promo">
     <p>Have a Promo code?</p>
-    <input type="text" id="coupon">
-    <input type="button" id="promo" value="Click to Enter">
+    <input type="text" id="coupon" placeholder="Enter your promo code here" checked>
+    <input type="button" id="promo" value="Apply" class="button">
   </div>
 
   <script src="js/index.js"></script>
