@@ -302,6 +302,7 @@ const itemsByOrder = event => {
     renderItemsFromArray(sorteditems);
 }
 
+/*
 const itemsBySize = event => {
   
     let size;
@@ -317,6 +318,7 @@ const itemsBySize = event => {
     }
     renderItemsFromArray(size);
 }
+*/
 
 
 const itemsByBrand = event => {
@@ -417,9 +419,17 @@ const renderItemsFromArray = arr => {
 window.addEventListener('load', () => {
     document.getElementById('itemSearch').addEventListener('input', loadItemByNameandBrand);
     document.getElementById('sortOrder').addEventListener('change', itemsByOrder);
-    document.getElementById('size-regular').addEventListener('click', itemsBySize);
-    document.getElementById('size-mini').addEventListener('click', itemsBySize);
+    // document.getElementById('size-regular').addEventListener('click', itemsBySize);
+    // document.getElementById('size-mini').addEventListener('click', itemsBySize);
     document.getElementById('brand').addEventListener('click', itemsByBrand);
     document.getElementById('scents').addEventListener('click', itemsByScent);
     renderItemsFromArray(items);
+});
+
+
+
+/****** DROPDOWN MENU */
+document.getElementById('dropdown-btn').addEventListener ('click', event => 
+{
+    document.getElementById('inside-menu').classList.toggle('open');
 });
