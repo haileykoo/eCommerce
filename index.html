@@ -4,74 +4,102 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Perfume for women</title>
   <link rel="stylesheet" href="css/index.css">
-  <title>Document</title>
 </head>
+
 <body>
-  <h1>Checkout</h1>
+  <header>
+    <nav class="topnav">
+      <a class="active" href="#home">Home</a>
+      <a href="#news">News</a>
+      <a href="#contact">Contact</a>
+      <a href="#about">About</a>
+    </nav>
+    <div class="banner">
+  
+    </div>
+  </header>
 
-  <table class="table">
-    <tr>
-      <th>Product</th>
-      <th>Quantity</th>
-      <th>Unit Price</th>
-      <th>Extended Price</th>
-    </tr>
+  <div id="filtersForm">
+    <form class="searchbox">
+      <input type="text" name="find" id="itemSearch" placeholder="Search Brands or Items">
+    </form>
+    <label for="categoryName">Category:
+      <select name="categoryName" id="categoryName">
+        <option value="all" selected>All Products</option>
+        <option value="toilette">Eau de Toilette Spray</option>
+        <option value="toilette-travel">Eau de Toilette Travel Spray</option>
+        <option value="spray">Spray</option>
+        <option value="perfum">Eau de Parfum Spray</option>
+        <option value="decanter">Eau de Parfum Decanter</option>
+      </select>
+    </label>
 
-    <tr>
-      <th>
-        <label> Pants </label>
-      </th>
-      <th>
-        <input type="button" id="pantsminusbtn" value="-">
-        <label id="pantsQty">0</label>
-        <input type="button" id="pantsplusbtn" value="+">
-      </th>
-      <th>
-        $<label id="unitP">40.99</label>
-      </th>
-      <th>
-        $<label id="extendedP">0.00</label>
-      </th>
-    </tr>
+    <select name="sort" id="sortOrder" class="sort">
+      <option value="" disabled selected>-- Sort By--</option>
+      <option value="bestSelling">Best Selling</option>
+      <option value="highRated">High Rated</option>
+      <option value="priceDesc">Price High to Low</option>
+      <option value="priceAsc">Price Low to High</option>
+      <option value="nameAsc">Name, A to Z</option>
+      <option value="nameDesc">Name, A to Z</option>
+    </select>
 
-    <tr>
-      <th>
-        <label> Shirt </label>
-      </th>
-      <th>
-        <input type="button" id="srtminusbtn" value="-">
-        <label id="shirtQty">0</label>
-        <input type="button" id="srtplusbtn" value="+">
-      </th>
-      <th>
-        $<label id="unitS">10.99</label>
-      </th>
-      <th>
-        $<label id="extendedS">0.00</label>
-      </th>
-    </tr>
-  </table>
+    <div class="filterForm">
+      <form>
+        <label id="sortSize">Size</label> <br>
+        <input type="radio" id="size-regular" name="size"> Regular size perfume <br>
+        <input type="radio" id="size-mini" name="size"> Mini size perfume <br>
+      </form>
+      
+      <div class="brand-menu">
+        <form id="brand">
+          <label>Brand</label> <br>
+          <input type="radio" name="brand" id="kat" class="brands kvd">
+          <input type="radio" name="brand" id="vik" class="brands vr">
+          <input type="radio" name="brand" id="yve" class="brands ysl">
+          <input type="radio" name="brand" id="mai" class="brands mm">
+          <input type="radio" name="brand" id="jul" class="brands jhag">
+          <input type="radio" name="brand" id="ver" class="brands versace">
+          <input type="radio" name="brand" id="mar" class="brands mj">
+          <input type="radio" name="brand" id="phi" class="brands philosophy">
+          <input type="radio" name="brand" id="jo" class="brands jml">
+          <input type="radio" name="brand" id="tom" class="brands tf">
+          <input type="radio" name="brand" id="mug" class="brands mugler">
+          <input type="radio" name="brand" id="val" class="brands valentino">
+        </form>
+      </div>
 
-  <input type="button" id="calculate" value="Calculate" class="button">
-
-  <div class="total">
-    <dl>
-      <dt>Subtotal:</dt>
-      <dd id="subtotal"></dd>
-      <dt>Tax:</dt>
-      <dd id="tax"></dd>
-      <dt>Total:</dt>
-      <dd id="total"></dd>
-    </dl>
+      <form id="scents">
+        <label>Scents</label> <br>
+        <input type="radio" name="scent" id="floral">Floral <br>
+        <input type="radio" name="scent" id="spicy">Spicy <br>
+        <input type="radio" name="scent" id="warm">Warm <br>
+        <input type="radio" name="scent" id="woody">Woody <br>
+        <input type="radio" name="scent" id="earthy" class="earthy">Earthy <br>
+        <input type="radio" name="scent" id="fresh">Fresh <br>
+      </form>
+    </div>
   </div>
 
-  <div class="promo">
-    <p>Have a Promo code?</p>
-    <input type="text" id="coupon" placeholder="Enter your promo code here" checked>
-    <input type="button" id="promo" value="Apply" class="button">
+  <div class="numResults">
+    <small id="numResults">(5 results)</small>
   </div>
 
+  <main class="grid" id="items">
+      <!-- <article>
+        <img src="" alt="">
+        <div class="text">
+          <h3></h3>
+          <p> <a href=></a></p>
+          <p></p>
+          <a class="btn btn-primary btn-block">Add to cart</a>
+        </div>
+      </article> -->
+    </main>
+
+</div>
   <script src="js/index.js"></script>
 </body>
 </html>
